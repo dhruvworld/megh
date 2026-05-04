@@ -2,7 +2,7 @@
   "name": "Uday Solanki",
   "slug": "uday-solanki",
   "role": "Co-founder",
-  "photo": "team/uday.jpg",
-  "order": 2,
-  "photoAlt": "Portrait of Uday Solanki, Co-founder"
+  "photo": "/site/team/uday-solanki/photo.JPG",
+  "photoAlt": "Portrait of Uday Solanki, Co-founder",
+  "order": 2
 }

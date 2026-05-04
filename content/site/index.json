@@ -1,9 +1,10 @@
 {
   "siteName": "Megh Foundation",
-  "logo": "branding/logo.png",
-  "heroImage": "hero/hero-main.jpg",
+  "logoAlt": "Megh Foundation logo",
   "heroHeadline": "Unlocking opportunities through digital learning",
   "heroSub": "We empower youth and underserved communities through education, skill development, and holistic growth — building a more progressive and sustainable India.",
+  "heroImage": "/site/hero/heroImage.jpg",
+  "heroImageAlt": "Youth participants in digital skilling session at Megh Foundation",
   "heroCtaPrimaryLabel": "Donate now",
   "heroCtaPrimaryHref": "/donate",
   "heroCtaSecondaryLabel": "Partner for CSR",
@@ -47,65 +48,6 @@
   "aboutValuesBody": "We combine digital literacy, soft skills, volunteering, and leadership development so youth can earn, contribute, and lead with confidence.",
   "contactIntro": "Have questions about CSR, donations, or volunteering? Reach out — we respond within two business days.",
   "donateIntro": "Your support funds training, materials, devices where needed, and placement support. 80G and impact reporting can be shared as applicable — mention it in your message.",
-  "pillars": [
-    {
-      "title": "Digital education & employment",
-      "body": "Technology-driven learning, career guidance, and job-ready training to close the digital divide and improve employability."
-    },
-    {
-      "title": "Rural development & youth leadership",
-      "body": "Skill-building and the “Community Friend” project to grow local changemakers and sustainable rural progress."
-    },
-    {
-      "title": "Volunteering & campaigns",
-      "body": "Service, awareness drives, health camps, and digital literacy campaigns that strengthen civic participation."
-    },
-    {
-      "title": "Decent work & economic growth",
-      "body": "Entrepreneurship support, livelihood skills, and pathways to decent work for inclusive economic growth."
-    }
-  ],
-  "empowermentBlocks": [
-    {
-      "kicker": "Inclusivity & leadership",
-      "title": "Cultivating leaders for a stronger community",
-      "body": "Mentorship and civic engagement so youth can solve local challenges with empathy and clarity."
-    },
-    {
-      "kicker": "Digital education",
-      "title": "Empowering lives through digital skills",
-      "body": "Strong foundations plus modern digital skills open meaningful employment and lifelong learning."
-    },
-    {
-      "kicker": "Volunteering",
-      "title": "Spreading hope through action",
-      "body": "Volunteers teach, organize, and inspire — turning empathy into visible community impact."
-    }
-  ],
-  "faqs": [
-    {
-      "question": "What is Megh Foundation?",
-      "answer": "A non-profit focused on holistic youth development — especially in rural and underserved India — through skills, education, and leadership."
-    },
-    {
-      "question": "What problem are you solving?",
-      "answer": "Underemployment linked to missing digital, interview, and workplace skills. We train to what employers actually hire for, with placement support."
-    },
-    {
-      "question": "How are CSR funds used?",
-      "answer": "Training delivery, trainers, materials, devices where required, assessments, and placement support — with transparent budgets and reporting."
-    },
-    {
-      "question": "Do you share impact reports?",
-      "answer": "Yes. Baseline at the start and endline after programs, including placement metrics, attendance, and anonymized youth feedback."
-    },
-    {
-      "question": "Can programs be customized?",
-      "answer": "We co-design with CSR partners around geography, sector, and workforce needs — timelines typically start within a few weeks of alignment."
-    }
-  ],
-  "logoAlt": "Megh Foundation logo",
-  "heroImageAlt": "Youth participants in digital skilling session at Megh Foundation",
   "headerNav": [
     {
       "label": "What we do",
@@ -176,7 +118,7 @@
   "donateDirectLabel": "Donate",
   "donateDiscussLabel": "Discuss a grant",
   "donateHelperText": "Point the donate URL in the CMS to Razorpay, GiveIndia, or your bank instructions page when ready.",
-  "homeHeroEyebrow": "India · Youth · Rural futures",
+  "homeHeroEyebrow": "India · Youth · SUSTAINABILITY",
   "homeStat1Label": "Reach",
   "homeStat1Sub": "learners supported",
   "homeStat2Label": "Volunteers",
@@ -266,5 +208,62 @@
   "contactPartnershipBullet1": "First response within 2 business days",
   "contactPartnershipBullet2": "Initial concept note within 7 business days",
   "contactPartnershipBullet3": "Budget and implementation milestones included",
-  "contactPartnershipButtonLabel": "Email partnerships"
+  "contactPartnershipButtonLabel": "Email partnerships",
+  "pillars": [
+    {
+      "title": "Digital education & employment",
+      "body": "Technology-driven learning, career guidance, and job-ready training to close the digital divide and improve employability."
+    },
+    {
+      "title": "Rural development & youth leadership",
+      "body": "Skill-building and the “Community Friend” project to grow local changemakers and sustainable rural progress."
+    },
+    {
+      "title": "Volunteering & campaigns",
+      "body": "Service, awareness drives, health camps, and digital literacy campaigns that strengthen civic participation."
+    },
+    {
+      "title": "Decent work & economic growth",
+      "body": "Entrepreneurship support, livelihood skills, and pathways to decent work for inclusive economic growth."
+    }
+  ],
+  "empowermentBlocks": [
+    {
+      "kicker": "Inclusivity & leadership",
+      "title": "Cultivating leaders for a stronger community",
+      "body": "Mentorship and civic engagement so youth can solve local challenges with empathy and clarity."
+    },
+    {
+      "kicker": "Digital education",
+      "title": "Empowering lives through digital skills",
+      "body": "Strong foundations plus modern digital skills open meaningful employment and lifelong learning."
+    },
+    {
+      "kicker": "Volunteering",
+      "title": "Spreading hope through action",
+      "body": "Volunteers teach, organize, and inspire — turning empathy into visible community impact."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is Megh Foundation?",
+      "answer": "A non-profit focused on holistic youth development — especially in rural and underserved India — through skills, education, and leadership."
+    },
+    {
+      "question": "What problem are you solving?",
+      "answer": "Underemployment linked to missing digital, interview, and workplace skills. We train to what employers actually hire for, with placement support."
+    },
+    {
+      "question": "How are CSR funds used?",
+      "answer": "Training delivery, trainers, materials, devices where required, assessments, and placement support — with transparent budgets and reporting."
+    },
+    {
+      "question": "Do you share impact reports?",
+      "answer": "Yes. Baseline at the start and endline after programs, including placement metrics, attendance, and anonymized youth feedback."
+    },
+    {
+      "question": "Can programs be customized?",
+      "answer": "We co-design with CSR partners around geography, sector, and workforce needs — timelines typically start within a few weeks of alignment."
+    }
+  ]
 }

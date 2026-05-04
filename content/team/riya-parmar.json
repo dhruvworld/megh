@@ -2,7 +2,7 @@
   "name": "Riya Parmar",
   "slug": "riya-parmar",
   "role": "CSR executive",
-  "photo": "team/riya.png",
-  "order": 3,
-  "photoAlt": "Portrait of Riya Parmar, CSR executive"
+  "photo": "/site/team/riya-parmar/photo.PNG",
+  "photoAlt": "Portrait of Riya Parmar, CSR executive",
+  "order": 3
 }
