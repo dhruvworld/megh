@@ -1,16 +1,16 @@
 {
   "title": "Volunteering & campaigns",
   "slug": "volunteering",
-  "summary": "Volunteer-led health camps, digital awareness, and civic campaigns that build a culture of service.",
+  "summary": "Show Up. Speak Up. Make a Difference.",
   "coverImage": "programs/volunteering-cover.jpg",
+  "coverImageAlt": "Volunteers engaging school students during outreach program",
   "gallery": [
     {
       "image": "programs/volunteering-cover.jpg",
-      "alt": "Volunteering & campaigns photo 1"
+      "alt": "Volunteer-led awareness and outreach activity"
     }
   ],
-  "bodyMarkdown": "## Volunteer with us\n\nFrom classroom assistants to campaign leads, volunteers power delivery and mentorship.\n\n## Campaigns\n\nSeasonal drives focus on health, safety online, and local issues identified by youth councils.",
+  "bodyMarkdown": "## You don't need money to change a life. You just need to show up.\n\nAt Megh Foundation, volunteers are not supporters - they are partners. Our Volunteering & Campaigns program channels the energy, skills, and passion of young professionals, students, and change-makers into meaningful on-ground action.\n\nThrough awareness campaigns, outreach drives, skill-sharing sessions, and community mobilization activities, our volunteers help awaken rural youth to their own potential, rights, and opportunities.\n\n## Volunteer roles\n\n- Training Volunteer - Teach skills to rural youth\n- Career Mentor - Guide youth towards their right path\n- Field Outreach Volunteer - Community visits and enrollment drives\n- Content & Campaign Volunteer - Digital awareness and outreach\n- Research & Impact Volunteer - Data collection and reporting\n\n## Campaign focus areas\n\n- Youth awareness and awakening drives\n- Digital literacy awareness in rural communities\n- Career rights and education access campaigns\n- Community mobilization for enrollment in programs\n- Social media campaigns amplifying youth voices\n\n## What volunteers get\n\nInternship, Certificate of Volunteering, LinkedIn Recommendation, Real NGO Experience, Changemaker Network, and Personal Growth.\n\n## SDG alignment\n\nSDG 4 - Quality Education  \nSDG 10 - Reduced Inequalities  \nSDG 16 - Strong Institutions  \nSDG 17 - Partnerships for the Goals",
   "order": 3,
-  "featuredOnHome": true,
-  "coverImageAlt": "Volunteers engaging school students during outreach program"
+  "featuredOnHome": true
 }
