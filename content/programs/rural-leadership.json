@@ -1,0 +1,20 @@
+{
+  "title": "Rural development & youth leadership",
+  "slug": "rural-leadership",
+  "summary": "Community Friend initiatives and rural leadership labs that grow local changemakers and sustainable progress.",
+  "coverImage": "programs/rural-leadership-cover.jpg",
+  "gallery": [
+    {
+      "image": "programs/rural-leadership-cover.jpg",
+      "alt": "Rural development & youth leadership photo 1"
+    },
+    {
+      "image": "programs/gallery-rural-1.jpg",
+      "alt": "Rural development & youth leadership photo 2"
+    }
+  ],
+  "bodyMarkdown": "## Rural leadership\n\nWe invest in young leaders who can convene communities, run awareness drives, and connect peers to skilling and jobs.\n\n## Community Friend\n\nVolunteer mentors anchor cohorts, track attendance, and celebrate wins on the ground.",
+  "order": 2,
+  "featuredOnHome": true,
+  "coverImageAlt": "Young community leaders participating in rural development workshop"
+}

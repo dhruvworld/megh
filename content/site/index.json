@@ -1,0 +1,270 @@
+{
+  "siteName": "Megh Foundation",
+  "logo": "branding/logo.png",
+  "heroImage": "hero/hero-main.jpg",
+  "heroHeadline": "Unlocking opportunities through digital learning",
+  "heroSub": "We empower youth and underserved communities through education, skill development, and holistic growth — building a more progressive and sustainable India.",
+  "heroCtaPrimaryLabel": "Donate now",
+  "heroCtaPrimaryHref": "/donate",
+  "heroCtaSecondaryLabel": "Partner for CSR",
+  "heroCtaSecondaryHref": "/contact",
+  "youthTagline": "By the youth, for the youth",
+  "youthBody": "Youth understand youth better than anyone else. By empowering them to lead, we ensure solutions stay relevant, impactful, and sustainable — building confidence, responsibility, and purpose.",
+  "transformTitle": "Empowering youth to build a better tomorrow",
+  "transformBody": "We don't just train — we transform. Each young person who walks through our programs walks out job-ready, confident, and connected.",
+  "transformCtaLabel": "Read more",
+  "transformCtaHref": "/about",
+  "inclusivityTitle": "Development through inclusivity and empowerment",
+  "inclusivityBody": "Youth are the driving force of a progressive and inclusive society. When every young person can participate, lead, and shape the future, communities grow stronger.",
+  "pillarsIntroTitle": "What we mean by youth empowerment",
+  "pillarsIntroBody": "Youth is not simply an age bracket — it is a stage of becoming. We work with young people ages 8–30, from children building their first sense of self to rural graduates entering the workforce.",
+  "statStudents": 1240,
+  "statVolunteers": 86,
+  "statCampaigns": 38,
+  "statEmployment": 412,
+  "csrTitle": "Don't just donate. Invest in India's future.",
+  "csrLead": "Real change happens on the ground. Every program starts with listening to communities, understanding what employers need, and building skills that lead to jobs.",
+  "csrPoint1Title": "The Megh way",
+  "csrPoint1Body": "Programs are co-designed with communities and aligned to local hiring demand — not generic slides in a boardroom.",
+  "csrPoint2Title": "Empowered youth. Stronger communities.",
+  "csrPoint2Body": "We work at the intersection of education, employment, and community development — a pipeline of job-ready youth who lift everyone around them.",
+  "csrPoint3Title": "Skilled youth. Developed India.",
+  "csrPoint3Body": "No nation grows by leaving its youth behind. Your CSR capital becomes measurable skills, placements, and dignity.",
+  "partnerTitle": "Partner with us to build a skilled India",
+  "partnerBody": "Every contribution doesn't only fund a training program — it can change the direction of a young person's life. CSR partners receive baseline and endline reporting with placement data and youth feedback.",
+  "phone": "+91 7878926919",
+  "email": "info@meghfoundation.in",
+  "address": "India — update with your registered office / program hubs in the CMS.",
+  "socialFacebook": "https://facebook.com",
+  "socialTwitter": "https://twitter.com",
+  "socialInstagram": "https://instagram.com",
+  "donateUrl": "/donate",
+  "aboutMissionTitle": "Our mission",
+  "aboutMissionBody": "Megh Foundation is dedicated to holistic youth development. We equip young people with knowledge, skills, and values to build a more progressive and sustainable India — with a focus on rural and underserved communities.",
+  "aboutStoryTitle": "Why we exist",
+  "aboutStoryBody": "Rural youth often remain unemployed or underemployed due to limited access to digital and practical skills. Even graduates may lack interview readiness and employer-aligned training. We bridge that gap with hands-on programs and mentorship.",
+  "aboutValuesTitle": "How we work",
+  "aboutValuesBody": "We combine digital literacy, soft skills, volunteering, and leadership development so youth can earn, contribute, and lead with confidence.",
+  "contactIntro": "Have questions about CSR, donations, or volunteering? Reach out — we respond within two business days.",
+  "donateIntro": "Your support funds training, materials, devices where needed, and placement support. 80G and impact reporting can be shared as applicable — mention it in your message.",
+  "pillars": [
+    {
+      "title": "Digital education & employment",
+      "body": "Technology-driven learning, career guidance, and job-ready training to close the digital divide and improve employability."
+    },
+    {
+      "title": "Rural development & youth leadership",
+      "body": "Skill-building and the “Community Friend” project to grow local changemakers and sustainable rural progress."
+    },
+    {
+      "title": "Volunteering & campaigns",
+      "body": "Service, awareness drives, health camps, and digital literacy campaigns that strengthen civic participation."
+    },
+    {
+      "title": "Decent work & economic growth",
+      "body": "Entrepreneurship support, livelihood skills, and pathways to decent work for inclusive economic growth."
+    }
+  ],
+  "empowermentBlocks": [
+    {
+      "kicker": "Inclusivity & leadership",
+      "title": "Cultivating leaders for a stronger community",
+      "body": "Mentorship and civic engagement so youth can solve local challenges with empathy and clarity."
+    },
+    {
+      "kicker": "Digital education",
+      "title": "Empowering lives through digital skills",
+      "body": "Strong foundations plus modern digital skills open meaningful employment and lifelong learning."
+    },
+    {
+      "kicker": "Volunteering",
+      "title": "Spreading hope through action",
+      "body": "Volunteers teach, organize, and inspire — turning empathy into visible community impact."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is Megh Foundation?",
+      "answer": "A non-profit focused on holistic youth development — especially in rural and underserved India — through skills, education, and leadership."
+    },
+    {
+      "question": "What problem are you solving?",
+      "answer": "Underemployment linked to missing digital, interview, and workplace skills. We train to what employers actually hire for, with placement support."
+    },
+    {
+      "question": "How are CSR funds used?",
+      "answer": "Training delivery, trainers, materials, devices where required, assessments, and placement support — with transparent budgets and reporting."
+    },
+    {
+      "question": "Do you share impact reports?",
+      "answer": "Yes. Baseline at the start and endline after programs, including placement metrics, attendance, and anonymized youth feedback."
+    },
+    {
+      "question": "Can programs be customized?",
+      "answer": "We co-design with CSR partners around geography, sector, and workforce needs — timelines typically start within a few weeks of alignment."
+    }
+  ],
+  "logoAlt": "Megh Foundation logo",
+  "heroImageAlt": "Youth participants in digital skilling session at Megh Foundation",
+  "headerNav": [
+    {
+      "label": "What we do",
+      "href": "/programs"
+    },
+    {
+      "label": "Who we are",
+      "href": "/about"
+    },
+    {
+      "label": "Stories",
+      "href": "/blog"
+    },
+    {
+      "label": "Get in touch",
+      "href": "/contact"
+    }
+  ],
+  "headerPartnerLabel": "Partner",
+  "headerDonateLabel": "Donate",
+  "footerTagline": "A youth-centred organisation advancing skills, dignity, and livelihoods — with the transparency international partners expect.",
+  "footerExploreHeading": "Explore",
+  "footerContactHeading": "Contact",
+  "footerFollowHeading": "Follow",
+  "footerMediaText": "For media, due diligence packs, or registration details, email us with your organisation name and timeline.",
+  "footerDonateLabel": "Donate",
+  "footerCsrLabel": "CSR inquiry",
+  "footerLegalLine": "All rights reserved.",
+  "footerSublegalLine": "Designed for clarity, accountability, and impact.",
+  "footerExploreLinks": [
+    {
+      "label": "Programs",
+      "href": "/programs"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Stories & updates",
+      "href": "/blog"
+    },
+    {
+      "label": "Ways to give",
+      "href": "/donate"
+    },
+    {
+      "label": "Contact & CSR",
+      "href": "/contact"
+    }
+  ],
+  "programsPageEyebrow": "What we do",
+  "programsPageTitle": "Programmes",
+  "programsPageIntro": "Each programme combines narrative, photography, and evidence — the standard international NGOs use to explain thematic work to donors and communities.",
+  "programsCardCtaText": "Programme brief",
+  "programsNoImageText": "Add cover image",
+  "programDetailBackLabel": "All programmes",
+  "programDetailGalleryTitle": "Field photography",
+  "programDetailGalleryIntro": "Upload additional images anytime in the CMS programme gallery.",
+  "blogPageEyebrow": "Stories & updates",
+  "blogPageTitle": "From the field",
+  "blogPageIntro": "Long-form updates, participant voice, and partnership notes — published through the same CMS as the rest of the site.",
+  "blogCardPlaceholderText": "Story",
+  "blogDetailBackLabel": "All stories",
+  "donatePageEyebrow": "Ways to give",
+  "donatePageTitle": "Support our work",
+  "donateOnlineLabel": "Donate online",
+  "donateDirectLabel": "Donate",
+  "donateDiscussLabel": "Discuss a grant",
+  "donateHelperText": "Point the donate URL in the CMS to Razorpay, GiveIndia, or your bank instructions page when ready.",
+  "homeHeroEyebrow": "India · Youth · Rural futures",
+  "homeStat1Label": "Reach",
+  "homeStat1Sub": "learners supported",
+  "homeStat2Label": "Volunteers",
+  "homeStat2Sub": "active contributors",
+  "homeStat3Label": "Placements",
+  "homeStat3Sub": "tracked outcomes",
+  "homeHeroFallbackKicker": "Photography",
+  "homeHeroFallbackTitle": "Show the work on the ground.",
+  "homeHeroFallbackBody": "Add a hero image in the CMS — cohorts, classrooms, and community moments build instant credibility with donors and CSR teams.",
+  "homeAccountabilityTitle": "Accountability by design",
+  "homeAccountabilityBody": "Baseline & endline reporting, budgets you can trace, and youth voice in the data.",
+  "homeTrustStrip": [
+    "CSR aligned",
+    "Youth-led delivery",
+    "Rural & underserved focus"
+  ],
+  "homeApproachEyebrow": "Approach",
+  "homeOutcomesEyebrow": "Outcomes",
+  "homeMissionEyebrow": "Mission lens",
+  "homeFocusEyebrow": "Focus areas",
+  "homePillarCta": "Explore programs",
+  "homeEvidenceEyebrow": "Evidence",
+  "homeEvidenceTitle": "Impact at a glance",
+  "homeEvidenceIntro": "Figures are maintained in your CMS and can be tied to audit-ready reporting for CSR partners.",
+  "homeImpactLearnersLabel": "Learners",
+  "homeImpactLearnersBody": "Training hours, assessments, and placement support — reported with context, not vanity metrics.",
+  "homeImpactVolunteersLabel": "Volunteers",
+  "homeImpactVolunteersBody": "Mentors, facilitators, and community anchors.",
+  "homeImpactCampaignsLabel": "Campaigns",
+  "homeImpactCampaignsBody": "Awareness, health, and digital inclusion drives.",
+  "homeImpactEmploymentLabel": "Employment & placements",
+  "homeImpactEmploymentBody": "First jobs, better roles, and verified transitions — tracked responsibly for partners and participants.",
+  "homePartnershipsEyebrow": "Partnerships",
+  "homeProgramsEyebrow": "Programmes",
+  "homeProgramsTitle": "Where resources become capability",
+  "homeProgramsIntro": "Each programme has its own narrative, gallery, and long-form detail — structured the way international NGOs present thematic work.",
+  "homeProgramsAllLabel": "View all programmes",
+  "homeProgramsCardCta": "Read programme brief",
+  "homeEmpowermentEyebrow": "Theory of change",
+  "homeEmpowermentTitle": "What youth empowerment means here",
+  "homeVoicesEyebrow": "Voices",
+  "homeVoicesTitle": "From participants & volunteers",
+  "homeQuestionsEyebrow": "Questions",
+  "homeQuestionsTitle": "Frequently asked",
+  "homeUpdatesEyebrow": "Updates",
+  "homeUpdatesTitle": "Latest from the field",
+  "homeUpdatesAllLabel": "View all stories",
+  "homeGovernanceEyebrow": "Governance",
+  "homeGovernanceTitle": "Built for serious partnerships",
+  "homeGovernanceIntro": "We structure delivery and reporting for institutional confidence: clear baselines, transparent budgets, participant-level progress tracking, and auditable outcomes.",
+  "homeComplianceLabel": "Compliance",
+  "homeComplianceTitle": "Financial transparency",
+  "homeComplianceBody": "Line-item budgets, utilization tracking, and donor-ready reporting cadence.",
+  "homeSafeguardingLabel": "Safeguarding",
+  "homeSafeguardingTitle": "Youth-first programme design",
+  "homeSafeguardingBody": "Structured mentoring, participant dignity, and safe learning environments across cohorts.",
+  "homeWorkflowLabel": "Partnership workflow",
+  "homeWorkflowStep1": "01 Discovery: geography, job roles, and youth segment alignment.",
+  "homeWorkflowStep2": "02 Design: co-created curriculum, budget, and measurable KPI framework.",
+  "homeWorkflowStep3": "03 Delivery: implementation with baseline-endline evidence reporting.",
+  "homeFinalEyebrow": "Partners & donors",
+  "homeFinalPrimaryLabel": "Schedule a conversation",
+  "homeFinalCallLabel": "Call",
+  "aboutPageEyebrow": "Who we are",
+  "aboutPageTitle": "About us",
+  "aboutPageIntro": "Mission, operating model, and the people accountable to communities and partners.",
+  "aboutSidebarEyebrow": "Next step",
+  "aboutSidebarTitle": "Programmes",
+  "aboutSidebarBody": "Thematic briefs, field photography, and narrative detail for each line of work.",
+  "aboutSidebarCtaLabel": "Browse programmes",
+  "aboutStandardsEyebrow1": "Accountability",
+  "aboutStandardsTitle1": "Outcome reporting",
+  "aboutStandardsBody1": "Baseline, midpoint, and endline monitoring with cohort-level learning and placement metrics.",
+  "aboutStandardsEyebrow2": "Delivery quality",
+  "aboutStandardsTitle2": "Field-led implementation",
+  "aboutStandardsBody2": "Program design is anchored in local context and employer demand, not generic training templates.",
+  "aboutStandardsEyebrow3": "Partnership standard",
+  "aboutStandardsTitle3": "CSR collaboration model",
+  "aboutStandardsBody3": "Clear scope, milestones, budget visibility, and review checkpoints throughout implementation.",
+  "aboutGovernanceEyebrow": "Governance",
+  "aboutTeamTitle": "Leadership team",
+  "aboutTeamIntro": "Portraits and titles are edited in the CMS under Team.",
+  "contactPageEyebrow": "Get in touch",
+  "contactPageTitle": "Contact",
+  "contactPartnershipTitle": "CSR & partnerships",
+  "contactPartnershipBody": "Share geography, sector, and CSR goals. We reply with a tailored proposal, indicative budget, and delivery timeline.",
+  "contactPartnershipBullet1": "First response within 2 business days",
+  "contactPartnershipBullet2": "Initial concept note within 7 business days",
+  "contactPartnershipBullet3": "Budget and implementation milestones included",
+  "contactPartnershipButtonLabel": "Email partnerships"
+}

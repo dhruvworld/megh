@@ -1,0 +1,16 @@
+{
+  "title": "Decent work & economic growth",
+  "slug": "decent-work",
+  "summary": "Livelihoods, entrepreneurship basics, and pathways to decent work aligned with local markets.",
+  "coverImage": "programs/decent-work-cover.jpg",
+  "gallery": [
+    {
+      "image": "programs/decent-work-cover.jpg",
+      "alt": "Decent work & economic growth photo 1"
+    }
+  ],
+  "bodyMarkdown": "## Economic participation\n\nWe emphasize fair conditions, clear contracts where applicable, and ethical referrals to employers.\n\n## Entrepreneurship\n\nLight-touch modules cover costing, savings, and digital marketing for micro ventures.",
+  "order": 4,
+  "featuredOnHome": true,
+  "coverImageAlt": "Youth employability and livelihood readiness field activity"
+}

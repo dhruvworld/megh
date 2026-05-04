@@ -1,0 +1,99 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { reader } from '../lib/reader';
+import { mediaUrl } from '../lib/assets';
+
+const site = await reader.singletons.site.readOrThrow({ resolveLinkedFiles: true });
+const teamRaw = await reader.collections.team.all({ resolveLinkedFiles: true });
+const team = teamRaw.map((m) => ({ slug: m.slug, ...m.entry })).sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
+---
+
+<BaseLayout title={`About — ${site.siteName}`} description={site.aboutMissionBody}>
+  <Header site={site} />
+  <main class="border-b border-brand-900/[0.06] bg-sand-50 pb-20">
+    <div class="border-b border-brand-900/[0.06] bg-white py-16 sm:py-20">
+      <div class="container-site max-w-4xl">
+        <p class="eyebrow">{site.aboutPageEyebrow ?? "Who we are"}</p>
+        <h1 class="mt-4 font-display text-4xl font-semibold tracking-tight sm:text-5xl">{site.aboutPageTitle ?? "About us"}</h1>
+        <p class="mt-5 max-w-2xl text-lg leading-relaxed text-brand-950/75">
+          {site.aboutPageIntro ?? "Mission, operating model, and the people accountable to communities and partners."}
+        </p>
+      </div>
+    </div>
+    <div class="container-site section-y !pt-16">
+      <div class="grid gap-10 lg:grid-cols-3">
+        <div class="lg:col-span-2 space-y-8">
+          <article class="card !p-8">
+            <h2 class="font-display text-2xl font-semibold">{site.aboutMissionTitle}</h2>
+            <p class="mt-5 whitespace-pre-line text-[17px] leading-relaxed text-brand-950/78">{site.aboutMissionBody}</p>
+          </article>
+          <article class="card !p-8">
+            <h2 class="font-display text-2xl font-semibold">{site.aboutStoryTitle}</h2>
+            <p class="mt-5 whitespace-pre-line text-[17px] leading-relaxed text-brand-950/78">{site.aboutStoryBody}</p>
+          </article>
+          <article class="card !p-8">
+            <h2 class="font-display text-2xl font-semibold">{site.aboutValuesTitle}</h2>
+            <p class="mt-5 whitespace-pre-line text-[17px] leading-relaxed text-brand-950/78">{site.aboutValuesBody}</p>
+          </article>
+        </div>
+        <aside class="card card-hover h-fit border-brand-900/[0.06] !p-8 lg:sticky lg:top-28">
+          <p class="eyebrow">{site.aboutSidebarEyebrow ?? "Next step"}</p>
+          <h2 class="mt-3 font-display text-xl font-semibold">{site.aboutSidebarTitle ?? "Programmes"}</h2>
+          <p class="mt-3 text-[15px] leading-relaxed text-muted">{site.aboutSidebarBody ?? "Thematic briefs, field photography, and narrative detail for each line of work."}</p>
+          <a href="/programs" class="btn-primary mt-8 w-full justify-center text-center">{site.aboutSidebarCtaLabel ?? "Browse programmes"}</a>
+        </aside>
+      </div>
+
+      <section class="mt-20 grid gap-6 md:grid-cols-3">
+        <article class="card !p-7">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted">{site.aboutStandardsEyebrow1 ?? "Accountability"}</p>
+          <h3 class="mt-3 font-display text-xl font-semibold">{site.aboutStandardsTitle1 ?? "Outcome reporting"}</h3>
+          <p class="mt-3 text-[15px] leading-relaxed text-brand-950/72">{site.aboutStandardsBody1 ?? "Baseline, midpoint, and endline monitoring with cohort-level learning and placement metrics."}</p>
+        </article>
+        <article class="card !p-7">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted">{site.aboutStandardsEyebrow2 ?? "Delivery quality"}</p>
+          <h3 class="mt-3 font-display text-xl font-semibold">{site.aboutStandardsTitle2 ?? "Field-led implementation"}</h3>
+          <p class="mt-3 text-[15px] leading-relaxed text-brand-950/72">{site.aboutStandardsBody2 ?? "Program design is anchored in local context and employer demand, not generic training templates."}</p>
+        </article>
+        <article class="card !p-7">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted">{site.aboutStandardsEyebrow3 ?? "Partnership standard"}</p>
+          <h3 class="mt-3 font-display text-xl font-semibold">{site.aboutStandardsTitle3 ?? "CSR collaboration model"}</h3>
+          <p class="mt-3 text-[15px] leading-relaxed text-brand-950/72">{site.aboutStandardsBody3 ?? "Clear scope, milestones, budget visibility, and review checkpoints throughout implementation."}</p>
+        </article>
+      </section>
+
+      <section class="mt-24 border-t border-brand-900/[0.06] pt-20">
+        <p class="eyebrow">{site.aboutGovernanceEyebrow ?? "Governance"}</p>
+        <h2 class="mt-4 font-display text-3xl font-semibold tracking-tight sm:text-4xl">{site.aboutTeamTitle ?? "Leadership team"}</h2>
+        <p class="mt-3 max-w-2xl text-[15px] leading-relaxed text-muted">{site.aboutTeamIntro ?? "Portraits and titles are edited in the CMS under Team."}</p>
+        <ul class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {
+            team.map((member) => {
+              const photo = mediaUrl(member.photo ?? undefined);
+              const initials = member.name
+                .split(' ')
+                .map((w: string) => w[0])
+                .join('')
+                .slice(0, 2)
+                .toUpperCase();
+              return (
+                <li class="card card-hover text-center !p-7">
+                  <div class="mx-auto flex h-28 w-28 items-center justify-center overflow-hidden rounded-full border border-brand-900/[0.08] bg-sand-100 text-lg font-semibold text-brand-800">
+                    {photo ? <img src={photo} alt={member.photoAlt ?? `Portrait of ${member.name}`} class="h-full w-full object-cover" /> : initials}
+                  </div>
+                  <p class="mt-5 font-display text-lg font-semibold text-brand-950">{member.name}</p>
+                  <p class="mt-1 text-[14px] text-muted">{member.role}</p>
+                </li>
+              );
+            })
+          }
+        </ul>
+      </section>
+    </div>
+  </main>
+  <Footer site={site} />
+</BaseLayout>

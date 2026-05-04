@@ -1,0 +1,16 @@
+{
+  "title": "Volunteering & campaigns",
+  "slug": "volunteering",
+  "summary": "Volunteer-led health camps, digital awareness, and civic campaigns that build a culture of service.",
+  "coverImage": "programs/volunteering-cover.jpg",
+  "gallery": [
+    {
+      "image": "programs/volunteering-cover.jpg",
+      "alt": "Volunteering & campaigns photo 1"
+    }
+  ],
+  "bodyMarkdown": "## Volunteer with us\n\nFrom classroom assistants to campaign leads, volunteers power delivery and mentorship.\n\n## Campaigns\n\nSeasonal drives focus on health, safety online, and local issues identified by youth councils.",
+  "order": 3,
+  "featuredOnHome": true,
+  "coverImageAlt": "Volunteers engaging school students during outreach program"
+}

@@ -1,0 +1,76 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { reader } from '../../lib/reader';
+import { mediaUrl } from '../../lib/assets';
+import { renderMarkdown } from '../../lib/markdown';
+
+export async function getStaticPaths() {
+  const all = await reader.collections.programs.all({ resolveLinkedFiles: true });
+  return all.map(({ slug }) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const site = await reader.singletons.site.readOrThrow({ resolveLinkedFiles: true });
+const entry = slug ? await reader.collections.programs.read(slug, { resolveLinkedFiles: true }) : null;
+if (!entry) {
+  return Astro.redirect('/programs');
+}
+
+const cover = mediaUrl(entry.coverImage ?? undefined);
+const gallery = (entry.gallery ?? [])
+  .map((g: { image?: string | null; alt?: string | null } | string | null, index: number) => {
+    const imageValue = typeof g === 'string' || g === null ? g : g.image;
+    const altValue = typeof g === 'string' || g === null ? null : g.alt;
+    const src = mediaUrl(imageValue ?? undefined);
+    if (!src) return null;
+    return {
+      src,
+      alt: altValue ?? `${entry.title} photo ${index + 1}`,
+    };
+  })
+  .filter(Boolean) as { src: string; alt: string }[];
+const html = renderMarkdown(entry.bodyMarkdown ?? '');
+---
+
+<BaseLayout title={`${entry.title} — ${site.siteName}`} description={entry.summary}>
+  <Header site={site} />
+  <article class="border-b border-brand-900/[0.06] bg-sand-50 pb-24">
+    <header class="border-b border-brand-900/[0.06] bg-white py-12 sm:py-16">
+      <div class="container-site max-w-3xl">
+        <a href="/programs" class="text-[14px] font-semibold text-brand-800 hover:text-brand-950">← {site.programDetailBackLabel ?? "All programmes"}</a>
+        <h1 class="mt-5 font-display text-4xl font-semibold tracking-tight sm:text-[2.75rem]">{entry.title}</h1>
+        <p class="mt-5 text-xl leading-relaxed text-brand-950/75">{entry.summary}</p>
+      </div>
+    </header>
+    <div class="container-site max-w-3xl pt-12 sm:pt-16">
+      {
+        cover && (
+          <div class="overflow-hidden rounded-2xl border border-brand-900/[0.08] shadow-lg">
+            <img src={cover} alt={entry.coverImageAlt ?? `${entry.title} cover photo`} class="w-full object-cover" loading="eager" />
+          </div>
+        )
+      }
+      {
+        gallery.length > 0 && (
+          <div class="mt-14">
+            <h2 class="font-display text-2xl font-semibold">{site.programDetailGalleryTitle ?? "Field photography"}</h2>
+            <p class="mt-2 text-[15px] text-muted">{site.programDetailGalleryIntro ?? "Upload additional images anytime in the CMS programme gallery."}</p>
+            <div class="mt-8 grid gap-4 sm:grid-cols-2">
+              {gallery.map((item) => (
+                <div class="overflow-hidden rounded-xl border border-brand-900/[0.08] bg-white shadow-sm">
+                  <img src={item.src} alt={item.alt} class="aspect-video w-full object-cover" loading="lazy" />
+                </div>
+              ))}
+            </div>
+          </div>
+        )
+      }
+      <div class="prose-cms mt-14 border-t border-brand-900/[0.06] pt-14" set:html={html} />
+    </div>
+  </article>
+  <Footer site={site} />
+</BaseLayout>

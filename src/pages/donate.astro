@@ -1,0 +1,46 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { reader } from '../lib/reader';
+
+const site = await reader.singletons.site.readOrThrow({ resolveLinkedFiles: true });
+const external = site.donateUrl?.startsWith('http');
+---
+
+<BaseLayout title={`${site.donateDirectLabel ?? "Donate"} — ${site.siteName}`}>
+  <Header site={site} />
+  <main class="border-b border-brand-900/[0.06] bg-sand-50 pb-24">
+    <div class="border-b border-brand-900/[0.06] bg-gradient-to-b from-brand-900 to-brand-800 py-20 text-center text-white sm:py-24">
+      <div class="container-site max-w-3xl">
+        <p class="eyebrow text-teal-200/90">{site.donatePageEyebrow ?? "Ways to give"}</p>
+        <h1 class="mt-4 font-display text-4xl font-semibold tracking-tight sm:text-5xl">{site.donatePageTitle ?? "Support our work"}</h1>
+        <p class="mt-6 text-lg leading-relaxed text-white/85">{site.donateIntro}</p>
+      </div>
+    </div>
+    <div class="container-site -mt-10 max-w-2xl text-center">
+      <div class="card !p-10 shadow-xl">
+        <div class="flex flex-wrap justify-center gap-3">
+          {
+            external ? (
+              <a href={site.donateUrl} class="btn-primary" target="_blank" rel="noopener noreferrer">
+                {site.donateOnlineLabel ?? "Donate online"}
+              </a>
+            ) : (
+              <a href={site.donateUrl} class="btn-primary">
+                {site.donateDirectLabel ?? "Donate"}
+              </a>
+            )
+          }
+          <a href={`mailto:${site.email}?subject=Donation`} class="btn-secondary">{site.donateDiscussLabel ?? "Discuss a grant"}</a>
+        </div>
+        <p class="mt-8 text-[13px] leading-relaxed text-muted">
+          {site.donateHelperText ?? "Point the donate URL in the CMS to Razorpay, GiveIndia, or your bank instructions page when ready."}
+        </p>
+      </div>
+    </div>
+  </main>
+  <Footer site={site} />
+</BaseLayout>

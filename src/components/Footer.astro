@@ -1,0 +1,109 @@
+---
+interface Props {
+  site: {
+    siteName: string;
+    phone: string;
+    email: string;
+    address: string;
+    socialFacebook: string;
+    socialTwitter: string;
+    socialInstagram: string;
+    footerTagline?: string;
+    footerExploreHeading?: string;
+    footerContactHeading?: string;
+    footerFollowHeading?: string;
+    footerMediaText?: string;
+    footerDonateLabel?: string;
+    footerCsrLabel?: string;
+    footerLegalLine?: string;
+    footerSublegalLine?: string;
+    footerExploreLinks?: Array<{ label: string; href: string }>;
+  };
+}
+
+const { site } = Astro.props;
+
+const explore =
+  site.footerExploreLinks && site.footerExploreLinks.length > 0
+    ? site.footerExploreLinks
+    : [
+        { href: '/programs', label: 'Programs' },
+        { href: '/about', label: 'About' },
+        { href: '/blog', label: 'Stories & updates' },
+        { href: '/donate', label: 'Ways to give' },
+        { href: '/contact', label: 'Contact & CSR' },
+      ];
+---
+
+<footer class="border-t border-brand-900/10 bg-brand-950 text-sand-100">
+  <div class="container-site section-y !pb-16 !pt-20">
+    <div class="grid gap-14 lg:grid-cols-12 lg:gap-10">
+      <div class="lg:col-span-4">
+        <p class="font-display text-2xl font-semibold tracking-tight text-white sm:text-3xl">{site.siteName}</p>
+        <p class="mt-5 max-w-sm text-[15px] leading-relaxed text-sand-100/75">
+          {site.footerTagline ??
+            'A youth-centred organisation advancing skills, dignity, and livelihoods — with the transparency international partners expect.'}
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="/donate" class="btn-primary text-sm"> {site.footerDonateLabel ?? 'Donate'} </a>
+          <a href="/contact" class="btn-secondary border-white/15 bg-transparent text-white hover:bg-white/10">
+            {site.footerCsrLabel ?? 'CSR inquiry'}
+          </a>
+        </div>
+      </div>
+
+      <div class="grid gap-10 sm:grid-cols-2 lg:col-span-5 lg:grid-cols-2">
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-sand-100/45">{site.footerExploreHeading ?? 'Explore'}</p>
+          <ul class="mt-5 space-y-3 text-[15px]">
+            {
+              explore.map((l) => (
+                <li>
+                  <a href={l.href} class="text-sand-100/85 transition hover:text-white">
+                    {l.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-sand-100/45">{site.footerContactHeading ?? 'Contact'}</p>
+          <ul class="mt-5 space-y-4 text-[15px]">
+            <li>
+              <a href={`tel:${site.phone.replace(/\s/g, '')}`} class="block font-medium text-white hover:text-sand-100">
+                {site.phone}
+              </a>
+            </li>
+            <li>
+              <a href={`mailto:${site.email}`} class="break-all text-sand-100/85 hover:text-white">
+                {site.email}
+              </a>
+            </li>
+            <li class="text-[14px] leading-relaxed text-sand-100/65">{site.address}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lg:col-span-3">
+        <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-sand-100/45">{site.footerFollowHeading ?? 'Follow'}</p>
+        <ul class="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-[15px]">
+          <li><a href={site.socialFacebook} class="text-sand-100/85 hover:text-white">Facebook</a></li>
+          <li><a href={site.socialTwitter} class="text-sand-100/85 hover:text-white">X</a></li>
+          <li><a href={site.socialInstagram} class="text-sand-100/85 hover:text-white">Instagram</a></li>
+        </ul>
+        <p class="mt-10 text-[13px] leading-relaxed text-sand-100/45">
+          {site.footerMediaText ??
+            'For media, due diligence packs, or registration details, email us with your organisation name and timeline.'}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t border-white/[0.08]">
+    <div class="container-site flex flex-col gap-3 py-6 text-[13px] text-sand-100/45 sm:flex-row sm:items-center sm:justify-between">
+      <p>© {new Date().getFullYear()} {site.siteName}. {site.footerLegalLine ?? 'All rights reserved.'}</p>
+      <p class="sm:text-right">{site.footerSublegalLine ?? 'Designed for clarity, accountability, and impact.'}</p>
+    </div>
+  </div>
+</footer>

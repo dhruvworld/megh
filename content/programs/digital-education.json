@@ -1,0 +1,20 @@
+{
+  "title": "Digital education & employment",
+  "slug": "digital-education",
+  "summary": "Bridging the digital divide with technology-driven learning, career guidance, and job-ready training for underserved youth.",
+  "coverImage": "programs/digital-education-cover.jpg",
+  "gallery": [
+    {
+      "image": "programs/digital-education-cover.jpg",
+      "alt": "Digital education & employment photo 1"
+    },
+    {
+      "image": "programs/gallery-digital-1.jpg",
+      "alt": "Digital education & employment photo 2"
+    }
+  ],
+  "bodyMarkdown": "## What we deliver\n\n- Digital literacy from fundamentals to workplace tools\n- Interview practice and resume support\n- Employer-aligned projects and assessments\n\n## Outcomes\n\nYouth leave with portfolios and confidence to pursue formal jobs, apprenticeships, or further study.",
+  "order": 1,
+  "featuredOnHome": true,
+  "coverImageAlt": "Digital education training session with rural youth using computers"
+}
