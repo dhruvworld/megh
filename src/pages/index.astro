@@ -476,6 +476,9 @@ const fmt = (n: number | undefined) => (n != null ? n.toLocaleString('en-IN') : 
         <p class="mt-6 text-lg leading-relaxed text-white/85">{site.partnerBody}</p>
         <div class="mt-10 flex flex-wrap justify-center gap-3">
           <a href="/contact" class="btn-primary bg-white text-brand-950 hover:bg-sand-100"> {site.homeFinalPrimaryLabel ?? "Schedule a conversation"} </a>
+          <button type="button" class="btn-secondary border-white/25 bg-transparent text-white hover:border-white/40 hover:bg-white/10" data-open-volunteer-modal>
+            {site.homeFinalVolunteerLabel ?? "Volunteer With Us"}
+          </button>
           <a
             href={`tel:${site.phone.replace(/\s/g, '')}`}
             class="btn-secondary border-white/25 bg-transparent text-white hover:border-white/40 hover:bg-white/10"

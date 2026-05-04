@@ -96,6 +96,8 @@ export default config({
           { label: 'Header menu items' }
         ),
         headerPartnerLabel: fields.text({ label: 'Header partner button label' }),
+        headerVolunteerLabel: fields.text({ label: 'Header volunteer button label' }),
+        volunteerPageHref: fields.text({ label: 'Volunteer button link (e.g. /contact)' }),
         headerDonateLabel: fields.text({ label: 'Header donate button label' }),
 
         footerTagline: fields.text({ label: 'Footer tagline', multiline: true }),
@@ -104,6 +106,7 @@ export default config({
         footerFollowHeading: fields.text({ label: 'Footer follow heading' }),
         footerMediaText: fields.text({ label: 'Footer media / due diligence text', multiline: true }),
         footerDonateLabel: fields.text({ label: 'Footer donate button label' }),
+        footerVolunteerLabel: fields.text({ label: 'Footer volunteer button label' }),
         footerCsrLabel: fields.text({ label: 'Footer CSR button label' }),
         footerLegalLine: fields.text({ label: 'Footer legal line' }),
         footerSublegalLine: fields.text({ label: 'Footer sub-legal line' }),
@@ -196,6 +199,7 @@ export default config({
         homeWorkflowStep3: fields.text({ label: 'Home workflow step 3', multiline: true }),
         homeFinalEyebrow: fields.text({ label: 'Home final CTA eyebrow' }),
         homeFinalPrimaryLabel: fields.text({ label: 'Home final CTA primary button label' }),
+        homeFinalVolunteerLabel: fields.text({ label: 'Home final CTA volunteer button label' }),
         homeFinalCallLabel: fields.text({ label: 'Home final CTA call prefix' }),
 
         aboutPageEyebrow: fields.text({ label: 'About page eyebrow' }),
