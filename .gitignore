@@ -26,3 +26,10 @@ pnpm-debug.log*
 
 # Local Netlify folder
 .netlify
+
+# Local photo dumps (source assets)
+PHOTOS/
+*.HEIC
+*.heic
+*.MOV
+*.mov

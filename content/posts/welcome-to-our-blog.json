@@ -1,9 +1,0 @@
-{
-  "title": "Welcome to the Megh Foundation blog",
-  "slug": "welcome-to-our-blog",
-  "publishDate": "2026-05-01",
-  "excerpt": "Stories from the field, program updates, and how partners can stay involved.",
-  "coverImage": "blog/field-update-cover.jpg",
-  "bodyMarkdown": "# Hello from Megh Foundation\n\nThis blog is managed in **Keystatic** — open `/keystatic` while running the dev server (or deploy with GitHub mode) to add posts, upload cover images, and schedule updates.\n\n## What you will read here\n\n- Impact snapshots\n- Youth voices\n- CSR partnership notes\n\nThank you for believing in **skilled, confident rural India**.",
-  "coverImageAlt": "Field photo from Megh Foundation community skilling activities"
-}
