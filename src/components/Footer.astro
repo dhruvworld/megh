@@ -6,8 +6,10 @@ interface Props {
     email: string;
     address: string;
     socialFacebook: string;
-    socialTwitter: string;
+    socialTwitter?: string;
     socialInstagram: string;
+    socialLinkedin?: string;
+    socialYoutube?: string;
     footerTagline?: string;
     footerExploreHeading?: string;
     footerContactHeading?: string;
@@ -94,8 +96,10 @@ const explore =
         <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-sand-100/45">{site.footerFollowHeading ?? 'Follow'}</p>
         <ul class="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-[15px]">
           <li><a href={site.socialFacebook} class="text-sand-100/85 hover:text-white">Facebook</a></li>
-          <li><a href={site.socialTwitter} class="text-sand-100/85 hover:text-white">X</a></li>
           <li><a href={site.socialInstagram} class="text-sand-100/85 hover:text-white">Instagram</a></li>
+          {site.socialLinkedin && <li><a href={site.socialLinkedin} class="text-sand-100/85 hover:text-white">LinkedIn</a></li>}
+          {site.socialYoutube && <li><a href={site.socialYoutube} class="text-sand-100/85 hover:text-white">YouTube</a></li>}
+          {site.socialTwitter && <li><a href={site.socialTwitter} class="text-sand-100/85 hover:text-white">X</a></li>}
         </ul>
         <p class="mt-10 text-[13px] leading-relaxed text-sand-100/45">
           {site.footerMediaText ??

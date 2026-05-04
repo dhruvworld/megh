@@ -78,6 +78,8 @@ export default config({
         socialFacebook: fields.text({ label: 'Facebook URL (https://...)' }),
         socialTwitter: fields.text({ label: 'X / Twitter URL' }),
         socialInstagram: fields.text({ label: 'Instagram URL' }),
+        socialLinkedin: fields.text({ label: 'LinkedIn URL' }),
+        socialYoutube: fields.text({ label: 'YouTube URL' }),
         donateUrl: fields.text({ label: 'Donate button URL' }),
         aboutMissionTitle: fields.text({ label: 'About: mission title' }),
         aboutMissionBody: fields.text({ label: 'About: mission', multiline: true }),

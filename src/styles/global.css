@@ -3,18 +3,18 @@
 @theme {
   --font-display: "Source Serif 4", "Georgia", ui-serif, serif;
   --font-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
-  --color-brand-950: #0c1222;
-  --color-brand-900: #0f3d3a;
-  --color-brand-800: #115e59;
-  --color-brand-700: #0f766e;
-  --color-brand-600: #0d9488;
-  --color-teal-600: #0d9488;
-  --color-teal-500: #14b8a6;
-  --color-sand-50: #fafaf9;
-  --color-sand-100: #f5f5f4;
-  --color-sand-200: #e7e5e4;
-  --color-accent: #b45309;
-  --color-accent-hover: #92400e;
+  --color-brand-950: #0b1f4d;
+  --color-brand-900: #1847a3;
+  --color-brand-800: #1f6fd1;
+  --color-brand-700: #328ce8;
+  --color-brand-600: #50a8f2;
+  --color-teal-600: #3b9cf0;
+  --color-teal-500: #67b9ff;
+  --color-sand-50: #f5f9ff;
+  --color-sand-100: #edf4ff;
+  --color-sand-200: #d8e9ff;
+  --color-accent: #1f6fd1;
+  --color-accent-hover: #1847a3;
   --color-muted: #64748b;
 }
 
