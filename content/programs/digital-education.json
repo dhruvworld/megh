@@ -2,9 +2,13 @@
   "title": "Digital education & employment",
   "slug": "digital-education",
   "summary": "Bridging the Skills Gap — One Youth at a Time.",
-  "coverImage": "programs/digital-education-cover.jpg",
-  "coverImageAlt": "Digital education training session with rural youth using computers",
+  "coverImage": "programs/digital-education-3.jpg",
+  "coverImageAlt": "Digital education classroom session with youth learners",
   "gallery": [
+    {
+      "image": "programs/digital-education-3.jpg",
+      "alt": "Digital education classroom training session"
+    },
     {
       "image": "programs/digital-education-cover.jpg",
       "alt": "Digital education and employment training batch"

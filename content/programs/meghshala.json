@@ -2,9 +2,18 @@
   "title": "Meghshala",
   "slug": "meghshala",
   "summary": "Every Child Deserves a Teacher. We Send Ours to Them.",
-  "coverImage": "programs/volunteering-cover.jpg",
-  "coverImageAlt": "Volunteer teaching children in underserved community",
-  "gallery": [],
+  "coverImage": "programs/volunteering-in-school.jpg",
+  "coverImageAlt": "Volunteer teacher working with children in an education session",
+  "gallery": [
+    {
+      "image": "programs/volunteering-in-school.jpg",
+      "alt": "Volunteer teaching children in a school setting"
+    },
+    {
+      "image": "programs/school-volunteering.jpg",
+      "alt": "Children participating in volunteer-led learning activity"
+    }
+  ],
   "bodyMarkdown": "## Quality education doesn't wait for the right address.\n\nMeghshala is Megh Foundation's volunteer-powered teaching program that sends trained volunteers directly into slum communities and underprivileged areas to teach children.\n\nOur volunteers don't just teach - they build relationships, spark curiosity, restore confidence, and show every child that someone cares enough to show up.\n\n## What Meghshala volunteers teach\n\n- Basic literacy and numeracy\n- English language fundamentals\n- Digital literacy and basic computer skills\n- Life skills: hygiene, communication, confidence\n- Creative activities: drawing, storytelling, art\n- Value education: respect, empathy, teamwork\n\n## Who Meghshala serves\n\nChildren aged 5-15 years in slum communities and underprivileged neighborhoods with limited access to quality school education.\n\n## What makes Meghshala different\n\nWe go to them. We don't wait for children to come to us. Volunteers travel to communities, removing barriers between a child and quality learning.\n\n## Volunteer call\n\nIf you are a student, teacher, professional, or anyone with a love for learning and children, Meghshala needs you. Even 2 hours a week can change a child's life.\n\n## SDG alignment\n\nSDG 4 - Quality Education  \nSDG 10 - Reduced Inequalities  \nSDG 1 - No Poverty  \nSDG 11 - Sustainable Communities  \nSDG 17 - Partnerships for the Goals",
   "order": 6,
   "featuredOnHome": false

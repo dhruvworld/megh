@@ -2,9 +2,13 @@
   "title": "Decent work & economic growth",
   "slug": "decent-work",
   "summary": "From Potential to Paycheck - Building Careers and Businesses That Last.",
-  "coverImage": "programs/decent-work-cover.jpg",
-  "coverImageAlt": "Youth employability and livelihood readiness field activity",
+  "coverImage": "programs/employment.jpg",
+  "coverImageAlt": "Youth participants in employment and work-readiness support session",
   "gallery": [
+    {
+      "image": "programs/employment.jpg",
+      "alt": "Employment support and work-readiness session"
+    },
     {
       "image": "programs/decent-work-cover.jpg",
       "alt": "Youth employability support session"
