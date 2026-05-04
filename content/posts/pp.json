@@ -1,6 +1,9 @@
 {
-  "title": "NEW ",
-  "slug": "OP",
+  "title": "Community field update",
+  "slug": "pp",
   "publishDate": "0024-03-24",
-  "excerpt": "jvvhcichjbv hsfvfbdanvcbadofcbdamnx cvj,aehlfcdab ncdavclacmavdsi;fchdk,c fciklhdb"
+  "excerpt": "Quick update from the field with latest activity highlights and participant progress.",
+  "coverImage": "blog/field-update-cover.jpg",
+  "coverImageAlt": "Community update field session photo",
+  "bodyMarkdown": "## Field update\n\nThis post is now fully valid in CMS format, with a cover image and body content so it opens correctly on the detail page."
 }

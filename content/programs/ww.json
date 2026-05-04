@@ -1,8 +1,11 @@
 {
-  "title": "work",
+  "title": "Work readiness initiative",
   "slug": "ww",
-  "summary": "ww",
+  "summary": "Short-cycle work readiness support with coaching, communication practice, and interview preparation.",
+  "coverImage": "programs/decent-work-cover.jpg",
   "gallery": [],
+  "bodyMarkdown": "## Work readiness\n\nA practical module to strengthen interview confidence, workplace basics, and employment preparedness.",
+  "order": 5,
   "featuredOnHome": true,
-  "coverImageAlt": "work cover photo"
+  "coverImageAlt": "Work readiness initiative cover photo"
 }

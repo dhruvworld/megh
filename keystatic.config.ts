@@ -262,7 +262,11 @@ export default config({
         title: fields.text({ label: 'Title' }),
         slug: fields.slug({ name: { label: 'URL slug' } }),
         summary: fields.text({ label: 'Short summary', multiline: true }),
-        coverImage: fields.image({ label: 'Cover image', ...programImages }),
+        coverImage: fields.image({
+          label: 'Cover image',
+          ...programImages,
+          validation: { isRequired: true },
+        }),
         coverImageAlt: fields.text({
           label: 'Cover image alt text',
           validation: { isRequired: false },
@@ -296,7 +300,11 @@ export default config({
         slug: fields.slug({ name: { label: 'URL slug' } }),
         publishDate: fields.date({ label: 'Publish date' }),
         excerpt: fields.text({ label: 'Excerpt', multiline: true }),
-        coverImage: fields.image({ label: 'Cover image', ...blogImages }),
+        coverImage: fields.image({
+          label: 'Cover image',
+          ...blogImages,
+          validation: { isRequired: true },
+        }),
         coverImageAlt: fields.text({
           label: 'Cover image alt text',
           validation: { isRequired: false },
