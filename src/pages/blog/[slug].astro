@@ -5,7 +5,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { reader } from '../../lib/reader';
-import { mediaUrl } from '../../lib/assets';
+import { mediaUrl, optimizedImageSrc, optimizedImageSrcSet } from '../../lib/assets';
 import { renderMarkdown } from '../../lib/markdown';
 
 export async function getStaticPaths() {
@@ -41,7 +41,15 @@ const html = renderMarkdown(post.bodyMarkdown ?? '');
       {
         cover && (
           <div class="overflow-hidden rounded-2xl border border-brand-900/[0.08] shadow-lg">
-            <img src={cover} alt={post.coverImageAlt ?? `${post.title} cover image`} class="w-full object-cover" loading="eager" />
+            <img
+              src={optimizedImageSrc(cover, 1280)}
+              srcset={optimizedImageSrcSet(cover, [640, 960, 1280, 1600])}
+              sizes="(max-width: 960px) 94vw, 860px"
+              alt={post.coverImageAlt ?? `${post.title} cover image`}
+              class="w-full object-cover"
+              loading="eager"
+              fetchpriority="high"
+            />
           </div>
         )
       }

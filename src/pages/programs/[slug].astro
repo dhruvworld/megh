@@ -5,7 +5,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { reader } from '../../lib/reader';
-import { mediaUrl } from '../../lib/assets';
+import { mediaUrl, optimizedImageSrc, optimizedImageSrcSet } from '../../lib/assets';
 import { renderMarkdown } from '../../lib/markdown';
 
 export async function getStaticPaths() {
@@ -50,7 +50,15 @@ const html = renderMarkdown(entry.bodyMarkdown ?? '');
       {
         cover && (
           <div class="overflow-hidden rounded-2xl border border-brand-900/[0.08] shadow-lg">
-            <img src={cover} alt={entry.coverImageAlt ?? `${entry.title} cover photo`} class="w-full object-cover" loading="eager" />
+            <img
+              src={optimizedImageSrc(cover, 1280)}
+              srcset={optimizedImageSrcSet(cover, [640, 960, 1280, 1600])}
+              sizes="(max-width: 960px) 94vw, 860px"
+              alt={entry.coverImageAlt ?? `${entry.title} cover photo`}
+              class="w-full object-cover"
+              loading="eager"
+              fetchpriority="high"
+            />
           </div>
         )
       }
@@ -62,7 +70,15 @@ const html = renderMarkdown(entry.bodyMarkdown ?? '');
             <div class="mt-8 grid gap-4 sm:grid-cols-2">
               {gallery.map((item) => (
                 <div class="overflow-hidden rounded-xl border border-brand-900/[0.08] bg-white shadow-sm">
-                  <img src={item.src} alt={item.alt} class="aspect-video w-full object-cover" loading="lazy" />
+                  <img
+                    src={optimizedImageSrc(item.src, 760)}
+                    srcset={optimizedImageSrcSet(item.src, [360, 560, 760, 960])}
+                    sizes="(max-width: 640px) 92vw, 46vw"
+                    alt={item.alt}
+                    class="aspect-video w-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               ))}
             </div>
