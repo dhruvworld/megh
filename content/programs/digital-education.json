@@ -2,24 +2,24 @@
   "title": "Digital education & employment",
   "slug": "digital-education",
   "summary": "Bridging the Skills Gap — One Youth at a Time.",
-  "coverImage": "programs/digital-education-3.jpg",
+  "coverImage": "programs/digital-education-1.jpg",
   "coverImageAlt": "Digital education classroom session with youth learners",
   "gallery": [
     {
+      "image": "programs/digital-education-1.jpg",
+      "alt": "Digital education and employment orientation session"
+    },
+    {
+      "image": "programs/digital-education-2.jpg",
+      "alt": "Employment readiness support for youth learners"
+    },
+    {
       "image": "programs/digital-education-3.jpg",
-      "alt": "Digital education classroom training session"
+      "alt": "Digital classroom session with youth participants"
     },
     {
-      "image": "programs/youth-students-sitting.jpg",
-      "alt": "Youth learners seated during a digital skills session"
-    },
-    {
-      "image": "programs/career-guidance-2.jpg",
-      "alt": "Career guidance session with youth participants"
-    },
-    {
-      "image": "programs/career-guidance-3.jpg",
-      "alt": "Mentor-led career guidance discussion"
+      "image": "programs/digital-education-4.jpg",
+      "alt": "Practical digital training and mentor interaction"
     }
   ],
   "bodyMarkdown": "## The right skill at the right time changes everything.\n\n65% of rural youth remain unemployed despite having degrees - not because they lack ambition, but because they lack practical, employer-ready skills. Our Digital Education & Employment Program directly bridges this gap.\n\nWe provide structured training in Tally Prime, digital literacy, computer basics, GST filing, soft skills, resume writing, and interview preparation - followed by active job placement support until every youth finds dignified employment.\n\n## Key highlights\n\n- 4.5 month structured training program\n- 30 youth per batch\n- 80% job placement target\n- Baseline to endline impact tracking\n- Employer-aligned curriculum\n\n## Who it is for\n\nRural and underserved youth aged 18-30, minimum 12th pass, from low-income families who are educated but unable to find employment due to lack of practical digital skills.\n\n## SDG alignment\n\nSDG 4 - Quality Education  \nSDG 8 - Decent Work & Economic Growth  \nSDG 1 - No Poverty  \nSDG 10 - Reduced Inequalities",
