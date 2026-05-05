@@ -43,12 +43,10 @@ const nav =
     <a href="/" class="group flex min-w-0 items-center gap-3 outline-none ring-brand-900/20 focus-visible:ring-2">
       {
         logoSrc ? (
-          <span class="inline-flex shrink-0 rounded-lg bg-white p-1.5 shadow-sm ring-1 ring-brand-900/10 sm:p-2">
-            <img src={logoSrc} alt={site.logoAlt ?? site.siteName} class="h-12 w-auto sm:h-14" width="188" height="56" />
-          </span>
+          <img src={logoSrc} alt={site.logoAlt ?? site.siteName} class="h-14 w-auto shrink-0 sm:h-16 lg:h-20" width="260" height="80" />
         ) : (
           <span
-            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-brand-900 text-sm font-bold tracking-tight text-white shadow-inner shadow-black/10 sm:h-14 sm:w-14 sm:text-base"
+            class="flex h-14 w-14 shrink-0 items-center justify-center rounded-md bg-brand-900 text-base font-bold tracking-tight text-white shadow-inner shadow-black/10 sm:h-16 sm:w-16 sm:text-lg lg:h-20 lg:w-20"
             aria-hidden="true"
           >
             MF
