@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import EventPopup from '../components/EventPopup.astro';
 
 interface Props {
   title: string;
@@ -45,6 +46,7 @@ const ogImage = image ?? '';
     <title>{title}</title>
   </head>
   <body class="min-h-screen">
+    <EventPopup />
     <a href="#site-content" class="skip-link">Skip to main content</a>
     <div id="site-content" tabindex="-1">
       <slot />
