@@ -1,7 +1,6 @@
 ---
 const registerUrl = 'https://forms.gle/34KBhmw82PEtqPKMA';
-// v3 — cache-busted; hotspots measured on 3200×4800 source (2:3 portrait)
-const popupImage = '/site/event-popup-v3.jpg';
+const popupImage = '/site/event-popup-v4.jpg';
 ---
 
 <div
@@ -17,7 +16,7 @@ const popupImage = '/site/event-popup-v3.jpg';
     <p id="event-popup-title" class="sr-only">
       Toppers Honor and Career Guidance Program 2026 — registration announcement
     </p>
-    <div class="event-popup__image-wrap">
+    <div class="event-popup__frame">
       <img
         src={popupImage}
         alt="Toppers Honor and Career Guidance Program 2026 — register by 13 June 2026"
@@ -27,21 +26,23 @@ const popupImage = '/site/event-popup-v3.jpg';
         loading="eager"
         decoding="async"
       />
-      <button
-        type="button"
-        class="event-popup__close-hit"
-        data-popup-close
-        aria-label="Close announcement"
-      ></button>
-      <a
-        href={registerUrl}
-        class="event-popup__register"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Register now — opens Google Form in a new tab"
-      >
-        <span class="sr-only">Register now</span>
-      </a>
+      <div class="event-popup__hotspots">
+        <button
+          type="button"
+          class="event-popup__close-hit"
+          data-popup-close
+          aria-label="Close announcement"
+        ></button>
+        <a
+          href={registerUrl}
+          class="event-popup__register"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Register now — opens Google Form in a new tab"
+        >
+          <span class="sr-only">Register now</span>
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -111,32 +112,41 @@ const popupImage = '/site/event-popup-v3.jpg';
     }
   }
 
-  /* Match source image 3200×4800 (2:3) so % hotspots stay aligned */
-  .event-popup__image-wrap {
+  /* Frame wraps image; hotspots layer matches rendered image size exactly */
+  .event-popup__frame {
     position: relative;
+    display: block;
     width: 100%;
-    aspect-ratio: 2 / 3;
-    max-height: min(92vh, 780px);
+    line-height: 0;
     border-radius: 0.75rem;
     overflow: hidden;
     box-shadow: 0 24px 60px -20px rgba(15, 23, 42, 0.45);
-    line-height: 0;
   }
 
   .event-popup__image {
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height: auto;
+    max-height: min(92vh, 780px);
   }
 
-  /* Built-in X circle — top-right (measured) */
+  .event-popup__hotspots {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .event-popup__hotspots > * {
+    pointer-events: auto;
+  }
+
+  /* Close X — top-right circle (3200×4800 measured) */
   .event-popup__close-hit {
     position: absolute;
-    top: 0.4%;
-    right: 2.7%;
-    width: 12%;
-    height: 8.1%;
+    top: 1.1%;
+    right: 2.1%;
+    width: 14.6%;
+    height: 9.8%;
     padding: 0;
     border: none;
     border-radius: 9999px;
@@ -151,13 +161,13 @@ const popupImage = '/site/event-popup-v3.jpg';
     outline: none;
   }
 
-  /* Blue REGISTER NOW pill — below red deadline banner (measured) */
+  /* REGISTER NOW blue pill (below registration guide label area) */
   .event-popup__register {
     position: absolute;
-    left: 6%;
-    right: 9.5%;
-    top: 53.3%;
-    height: 8.8%;
+    left: 17.9%;
+    right: 18.3%;
+    top: 61.8%;
+    height: 8.9%;
     border-radius: 9999px;
     cursor: pointer;
     transition: outline 0.15s, background 0.15s;
