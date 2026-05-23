@@ -1,6 +1,7 @@
 ---
 const registerUrl = 'https://forms.gle/34KBhmw82PEtqPKMA';
-const popupImage = '/site/event-popup-2026.jpg';
+// v3 — cache-busted; hotspots measured on 3200×4800 source (2:3 portrait)
+const popupImage = '/site/event-popup-v3.jpg';
 ---
 
 <div
@@ -96,7 +97,6 @@ const popupImage = '/site/event-popup-2026.jpg';
     position: relative;
     z-index: 1;
     width: min(92vw, 400px);
-    max-height: min(94vh, 820px);
     animation: event-popup-in 0.35s ease-out;
   }
 
@@ -111,8 +111,12 @@ const popupImage = '/site/event-popup-2026.jpg';
     }
   }
 
+  /* Match source image 3200×4800 (2:3) so % hotspots stay aligned */
   .event-popup__image-wrap {
     position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    max-height: min(92vh, 780px);
     border-radius: 0.75rem;
     overflow: hidden;
     box-shadow: 0 24px 60px -20px rgba(15, 23, 42, 0.45);
@@ -122,18 +126,17 @@ const popupImage = '/site/event-popup-2026.jpg';
   .event-popup__image {
     display: block;
     width: 100%;
-    height: auto;
-    max-height: min(92vh, 780px);
+    height: 100%;
     object-fit: contain;
   }
 
-  /* Built-in X at top-right of the flyer */
+  /* Built-in X circle — top-right (measured) */
   .event-popup__close-hit {
     position: absolute;
-    top: 0.8%;
-    right: 3%;
-    width: 10%;
-    height: 5.2%;
+    top: 0.4%;
+    right: 2.7%;
+    width: 12%;
+    height: 8.1%;
     padding: 0;
     border: none;
     border-radius: 9999px;
@@ -148,13 +151,13 @@ const popupImage = '/site/event-popup-2026.jpg';
     outline: none;
   }
 
-  /* REGISTER NOW button (blue capsule, below red deadline banner) */
+  /* Blue REGISTER NOW pill — below red deadline banner (measured) */
   .event-popup__register {
     position: absolute;
-    left: 9.5%;
+    left: 6%;
     right: 9.5%;
-    top: 47.2%;
-    height: 6.8%;
+    top: 53.3%;
+    height: 8.8%;
     border-radius: 9999px;
     cursor: pointer;
     transition: outline 0.15s, background 0.15s;
