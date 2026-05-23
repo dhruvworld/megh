@@ -13,35 +13,33 @@ const popupImage = '/site/event-popup.jpg';
 >
   <div class="event-popup__backdrop" data-popup-close></div>
   <div class="event-popup__panel">
-    <button
-      type="button"
-      class="event-popup__close"
-      data-popup-close
-      aria-label="Close announcement"
-    >
-      <span aria-hidden="true">&times;</span>
-    </button>
     <p id="event-popup-title" class="sr-only">
       Toppers Honor and Career Guidance Program 2026 — registration announcement
     </p>
     <div class="event-popup__image-wrap">
       <img
         src={popupImage}
-        alt="Toppers Honor and Career Guidance Program 2026 — Megh Foundation and Vighnaharta Charitable Trust"
-        width="1200"
+        alt="Toppers Honor and Career Guidance Program 2026 — register by 13 June 2026"
+        width="800"
         height="1200"
         class="event-popup__image"
         loading="eager"
         decoding="async"
       />
+      <button
+        type="button"
+        class="event-popup__close-hit"
+        data-popup-close
+        aria-label="Close announcement"
+      ></button>
       <a
         href={registerUrl}
         class="event-popup__register"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Start registration — opens Google Form in a new tab"
+        aria-label="Register now — opens Google Form in a new tab"
       >
-        <span class="sr-only">Start register</span>
+        <span class="sr-only">Register now</span>
       </a>
     </div>
   </div>
@@ -80,7 +78,7 @@ const popupImage = '/site/event-popup.jpg';
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 0.75rem;
   }
 
   .event-popup[hidden] {
@@ -97,8 +95,8 @@ const popupImage = '/site/event-popup.jpg';
   .event-popup__panel {
     position: relative;
     z-index: 1;
-    width: min(92vw, 520px);
-    max-height: min(92vh, 720px);
+    width: min(92vw, 400px);
+    max-height: min(94vh, 820px);
     animation: event-popup-in 0.35s ease-out;
   }
 
@@ -113,32 +111,6 @@ const popupImage = '/site/event-popup.jpg';
     }
   }
 
-  .event-popup__close {
-    position: absolute;
-    top: -0.5rem;
-    right: -0.5rem;
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.25rem;
-    height: 2.25rem;
-    border: none;
-    border-radius: 9999px;
-    background: white;
-    color: #1847a3;
-    font-size: 1.5rem;
-    line-height: 1;
-    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.2);
-    cursor: pointer;
-    transition: background 0.15s, transform 0.15s;
-  }
-
-  .event-popup__close:hover {
-    background: #edf4ff;
-    transform: scale(1.05);
-  }
-
   .event-popup__image-wrap {
     position: relative;
     border-radius: 0.75rem;
@@ -151,17 +123,38 @@ const popupImage = '/site/event-popup.jpg';
     display: block;
     width: 100%;
     height: auto;
-    max-height: min(85vh, 680px);
+    max-height: min(92vh, 780px);
     object-fit: contain;
   }
 
-  /* Clickable overlay aligned to the START REGISTER button on the flyer */
+  /* Built-in X at top-right of the flyer */
+  .event-popup__close-hit {
+    position: absolute;
+    top: 1.2%;
+    right: 2.5%;
+    width: 9%;
+    height: 4.8%;
+    padding: 0;
+    border: none;
+    border-radius: 9999px;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+
+  .event-popup__close-hit:hover,
+  .event-popup__close-hit:focus-visible {
+    background: rgba(255, 255, 255, 0.18);
+    outline: none;
+  }
+
+  /* REGISTER NOW button (blue capsule) */
   .event-popup__register {
     position: absolute;
-    left: 18%;
-    right: 18%;
-    bottom: 11.5%;
-    height: 9%;
+    left: 8%;
+    right: 8%;
+    top: 54.5%;
+    height: 7.5%;
     border-radius: 9999px;
     cursor: pointer;
     transition: outline 0.15s, background 0.15s;
@@ -169,9 +162,9 @@ const popupImage = '/site/event-popup.jpg';
 
   .event-popup__register:hover,
   .event-popup__register:focus-visible {
-    outline: 3px solid rgba(255, 255, 255, 0.9);
+    outline: 3px solid rgba(255, 215, 0, 0.85);
     outline-offset: 2px;
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.1);
   }
 
   :global(body.event-popup-open) {
